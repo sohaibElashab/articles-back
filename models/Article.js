@@ -28,6 +28,10 @@ const articleSchema = new mongoose.Schema({
     default: "private",
     required: true,
   },
+  isDuplicate: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 module.exports = mongoose.model("Article", articleSchema);
